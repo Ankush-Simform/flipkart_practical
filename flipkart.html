@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
+    <title>Flipkart</title>
+    <link rel="icon" href=".vscode/images/favicon.jpeg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     
     <style>
         .navbar {
@@ -140,6 +142,9 @@
         width: auto;
         height: 150px !important;
        } */
+        .e{
+          position: relative;
+        }
 
        .d .e{
         width: auto;
@@ -248,6 +253,42 @@
     height: 150px;
     object-fit: contain;
 }
+#right{
+    position: absolute;
+    top: 55%;
+    right: 14px;
+    transform: translateY(-50%);
+    z-index: 10;
+    /* flex-diddrection: row; */
+    height: 120px;
+    /* max-height: ; */
+    margin-left: 0;
+    align-self: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+#left{
+    position: absolute;
+    top: 55%;
+    left: 14px;
+    transform: translateY(-50%);
+    z-index: 10;
+    /* flex-diddrection: row; */
+    height: 120px;
+    /* max-height: ; */
+    margin-left: 0px;
+    align-self: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.hide{
+    display: none !important;
+}
+
     </style>
 
 </head>
@@ -255,7 +296,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">     
-                <img src="Flipkart.jpg" id="logo" alt="Flipkart">
+                <img src=".vscode/images/Flipkart.jpg" id="logo" alt="Flipkart">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
@@ -265,8 +306,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <form class="d-flex flex-grow-1 mx-lg-4 me-lg-5 my-2 my-lg-0">
                     <div class="search-wrapper">
-                        <input class="form-control search-input" type="search" placeholder="Search for products, brands and more">
-                        <img src="sear.webp" id="searchlogo" alt="search-icon">
+                        <input class="form-control search-input" type="search" placeholder="Search for products, brands and more" id="debounce1" >
+                        <img src=".vscode/images/sear.webp" id="searchlogo" alt="search-icon">
                     </div>
                 </form>
 
@@ -287,7 +328,7 @@
                                         <!-- <li class="nav-item"><a class="nav-link" href="#">Cart</a></li> -->
                                         <li class="nav-item ms-lg-5">
                                             <a class="nav-link d-flex align-items-center" href="#">
-                                                <img src="cartlogo1.png" id="cartlogo" alt="cart">
+                                                <img src=".vscode/images/cartlogo1.png" id="cartlogo" alt="cart">
                                                 <span class="ms-2">Cart</span>
                                             </a>
                                         </li>
@@ -300,18 +341,18 @@
     </nav>
     <div class="a">
         <div class="c">
-        <img src="offer.webp" alt="img1">
+        <img src=".vscode/images/offer.webp" alt="img1">
         <p>Top Offers</p></div>
         <div class="c">
-        <img src="grocery.png" alt="img2">
+        <img src=".vscode/images/grocery.png" alt="img2">
         <p>Grocery</p></div>
         
         <div class="c">
 
-        <img src="mobile.png" alt="img3">
+        <img src=".vscode/images/mobile.png" alt="img3">
         <p>Mobiles</p></div>
         <div class="c">
-        <img src="fashion.png" alt="img4">
+        <img src=".vscode/images/fashion.png" alt="img4">
       <p>  <select>
             <option value="Fashion" >
                 Fashion
@@ -320,7 +361,7 @@
 
     </div>
         <div class="c">
-        <img src="Electronics.png" alt="img5">
+        <img src=".vscode/images/Electronics.png" alt="img5">
         <p>  <select>
             <option value="Fashion">
                 Electronics
@@ -329,7 +370,7 @@
 
         <div class="c">
 
-        <img src="homw.png" alt="img6">
+        <img src=".vscode/images/homw.png" alt="img6">
         <p>  <select>
             <option value="Fashion">
                 Home
@@ -338,7 +379,7 @@
 
         <div class="c">
 
-        <img src="appliances.png" alt="img7">
+        <img src=".vscode/images/appliances.png" alt="img7">
         <p>  <select>
             <option value="Fashion">
                 Appliances
@@ -346,13 +387,13 @@
         </select></p></div>
 
         <div class="c">
-        <img src="travel.png" alt="img8">
+        <img src=".vscode/images/travel.png" alt="img8">
         <p>  
                 Travel
            </p></div>
 
         <div class="c">
-        <img src="toys.webp" alt="img9">
+        <img src=".vscode/images/toys.webp" alt="img9">
         <p>  <select>
             <option value="Fashion">
                 toys
@@ -363,78 +404,77 @@
 
 
     <div class="d">
-        <div class="e">Deals Of the Day <img src="timer.png">
+        <div class="e">Deals Of the Day <img src=".vscode/images/timer.png">
             <input type="button" value="VIEW ALL" id="view">
              <hr>
 
-             <div class="deals-wrapper">
+             <div class="deals-wrapper " >
              <div class="deals" style="min-width: 180px;" >
-             <img src="OIP.webp" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
+             <img src=".vscode/images/OIP.webp" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
             <p class="mb-2 small">Casio.Fastrack,sonata...</p>
             <p class="text-success mb-1 small">Upto 80%+Extra 10%Off</p>
             <p class="text-muted">Knockout Deals!</p>
             </div>
 
              <div class="deals" style="min-width: 180px;" >
-             <img src="home.webp" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
+             <img src=".vscode/images/home.webp" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
             <p class="mb-2 small">Home Temple & more</p>
             <p class="text-success mb-1 small">Extra 10 %off</p>
             <p class="text-muted">Space Saving furniture</p>
             </div>
 
              <div class="deals" style="min-width: 180px;" >
-             <img src="cases.png" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
+             <img src=".vscode/images/cases.png" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
             <p class="mb-2 small">Premium Tablet Cases</p>
             <p class="text-success mb-1 small">Extra 10 %off</p>
             <p class="text-muted">Space Saving furniture</p>
             </div>
 
              <div class="deals" style="min-width: 180px;" >
-             <img src="HomeDecor.jpg" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
+             <img src=".vscode/images/HomeDecor.jpg" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
             <p class="mb-2 small">Best of Home Decor</p>
             <p class="text-success mb-1 small">Extra 10 %off</p>
             <p class="text-muted">Space Saving furniture</p>
         </div>
 
              <div class="deals" style="max-width: 180px;" >
-             <img src="Metronaut.jpg" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
+             <img src=".vscode/images/Metronaut.jpg" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
             <p class="mb-2 small">Metronaut Provogue and & ...</p>
             <p class="text-success mb-1 small">Extra 10 %off</p>
             <p class="text-muted">Space Saving furniture</p>
             </div>
 
              <div class="deals" style="max-width: 180px;" >
-             <img src="Lava.jpg" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
+             <img src=".vscode/images/Lava.jpg" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
             <p class="mb-2 small">LAVA A1500</p>
             <p class="text-success mb-1 small">Extra 10 %off</p>
             <p class="text-muted">Space Saving furniture</p>
             </div>
 
              <div class="deals" style="max-width: 180px;" >
-             <img src="Lava.jpg" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
+             <img src=".vscode/images/Lava.jpg" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
             <p class="mb-2 small">LAVA A1500</p>
             <p class="text-success mb-1 small">Extra 10 %off</p>
             <p class="text-muted">Space Saving furniture</p>
             </div>
+            <button class="btn btn-light" id="left">
+              <i class="bi bi-chevron-left "></i>
+                 </button>
+               
+
             
-
-
+              <button class="btn btn-light" id="right">
+              <i class="bi bi-chevron-right"></i>
+                 </button>
+               
 
             </div>
-
-
-            
-            </div>
-            
-          
-
-
-
-        
-        
+             
+             </div>
+ 
         
         <div class="f" style="height: auto; max-height: 400px;">
-            <img src="ad.png" alt="image" style="width: 100%; height: auto; max-height: 400px; justify-content: center; object-fit: contain;">
+            <img src=".vscode/images/ad.png" alt="image" style="width: 100%; height: auto; max-height: 400px; justify-content: center; object-fit: contain;">
         </div>
     </div>
     <div class="g">
@@ -452,47 +492,47 @@
 
               <div class="deals-wrapper">
              <div class="deals" style="min-width: 180px;" >
-             <img src="Harmonium.jpg" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
+             <img src=".vscode/images/Harmonium.jpg" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
             <p class="mb-2 small">Harmonioums</p>
             <p class="text-success mb-1 small">Upto 60% Off</p>
             <p class="text-muted">Shop Now!</p>
             </div>
 
              <div class="deals" style="min-width: 180px;" >
-             <img src="fluet.png" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
+             <img src=".vscode/images/fluet.png" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
             <p class="mb-2 small">Flutes</p>
             <p class="text-success mb-1 small">Upto 80% Off</p>
             <p class="text-muted">Shop Now!</p>
             </div>
 
              <div class="deals" style="min-width: 180px;" >
-             <img src="AcousticGuitars-2.jpg" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
+             <img src=".vscode/images/AcousticGuitars-2.jpg" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
             <p class="mb-2 small">Acoustic Guitars</p>
             <p class="text-success mb-1 small">Starting 1799</p>
             <p class="text-muted">Juarez, Revel..</p>
             </div>
 
              <div class="deals" style="min-width: 180px;" >
-             <img src="MusicalAccessories.jpg" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
+             <img src=".vscode/images/MusicalAccessories.jpg" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
             <p class="mb-2 small">Musical Accessories</p>
             <p class="text-success mb-1 small">Upto 80% Off</p>
             <p class="text-muted">Shop Now!</p>
             </div>
              <div class="deals" style="min-width: 180px;" >
-             <img src="MicrophoneAccessories.png" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
+             <img src=".vscode/images/MicrophoneAccessories.png" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
             <p class="mb-2 small">Microphone Accessories</p>
             <p class="text-success mb-1 small">Upto 80% Off</p>
             <p class="text-muted">Shop Now!</p>
             </div>
 
              <div class="deals" style="min-width: 180px;" >
-             <img src="AcousticGuitars-2.jpg" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
+             <img src=".vscode/images/AcousticGuitars-2.jpg" alt="" class="img-fluid mb-2" style="height: 150px; object-fit: contain;">
             <p class="mb-2 small">Acoustic Guitars</p>
             <p class="text-success mb-1 small">Starting 1799</p>
             <p class="text-muted">Juarez, Revel..</p>
             </div>
 
-            
+          
             
             
             
@@ -503,6 +543,45 @@
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+const searchInput = document.getElementById('debounce1');
+const products = document.querySelectorAll('.deals');
+
+function debounce(func, delay) {
+    let timeOut; 
+    return (...args) => {
+        clearTimeout(timeOut);
+        timeOut = setTimeout(() => {
+            func.apply(this, args);
+        }, delay);
+    };
+}
+
+const filterProducts = (query) => {
+    const searchTerm = query.toLowerCase();
+
+    products.forEach((product) => {
+
+        const content = product.innerText.toLowerCase();
+
+        if (content.includes(searchTerm)) {
+            product.classList.remove('hide'); 
+        } else {
+            product.classList.add('hide');    
+        }
+    });
+};
+
+
+const handleSearch = debounce(filterProducts, 300);
+
+
+if (searchInput) {
+    searchInput.addEventListener('keyup', (e) => {
+        handleSearch(e.target.value);
+    });
+}
+    </script>
 </body>
 </html>
