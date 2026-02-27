@@ -232,7 +232,6 @@
     &::-webkit-scrollbar {
         display: none;
     }
-
    
     scrollbar-width: none;
 
@@ -557,7 +556,6 @@ function debounce(func, delay) {
         }, delay);
     };
 }
-
 const filterProducts = (query) => {
     const searchTerm = query.toLowerCase();
 
@@ -573,9 +571,7 @@ const filterProducts = (query) => {
     });
 };
 
-
 const handleSearch = debounce(filterProducts, 300);
-
 
 if (searchInput) {
     searchInput.addEventListener('keyup', (e) => {

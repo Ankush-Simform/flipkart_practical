@@ -1,0 +1,229 @@
+        .navbar {
+            background-color: #2874f0;
+        }
+        
+        .container-fluid {
+            
+            max-width: 1200px; 
+            padding-left: 0 15px;
+        }
+
+        .navbar-brand img {
+            max-height: 40px;
+            width: auto;
+        }
+
+        .search-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 560px; 
+        }
+
+        .search-input {
+            width: 100%;
+            border-radius: 2px;
+            border: none;
+            padding: 8px 40px 8px 15px; 
+            font-size: 14px;
+            outline: none;
+        }
+
+        #searchlogo {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            max-height: 20px;
+            pointer-events: none; 
+        }
+
+            .nav-link {
+            color: white !important;
+        }
+        .navbar-nav{
+            padding-right: 0% !important;
+            align-items: center;
+            
+        }
+        #login{
+            border: 1px solid #fff;
+            color: #2874f0;
+            font-weight: 550;
+            text-decoration: none;
+            background-color: #fff;
+            padding: 5px 40px;
+            align-items: center;
+            width: auto;
+            max-width: 200px;
+        }
+        #cartlogo{
+
+            max-height: 40px;
+            
+            align-items: center;
+            width: auto;
+        }
+        .nav-link span{
+            font-weight: 600;
+        }
+               div.a{   display: flex;
+            justify-content: flex-start;
+            justify-content: space-evenly;
+            align-items: center; 
+            padding: 8px 100px;
+                flex-wrap: nowrap;
+            overflow-y: auto;
+            background-color: #fff;
+            gap: 20px;   
+            width: 100%;
+            height: auto;
+            max-height: 120px;
+           
+        }
+        div.a img{
+            width:100% ;
+            max-width: 80px;
+            align-items: center;
+            object-fit: contain;
+            height:auto;
+            max-height: 140px;
+        }
+        body{
+            background-color: #f1f3f6;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .c {
+        text-align: center;
+        flex: 0 1 auto; 
+        min-width: 70px;
+    }
+       .c select{
+        border: none;
+        font-weight: 550;
+        outline: none;
+        align-items: center;
+        background-color: #fff;
+       }
+       .c p{
+        font-weight: 550;
+       }
+
+       .d{
+        display: grid;
+        gap: 20px;
+        margin: 20px 6%;
+        padding: 10px 10px 10px 10px;
+        height: auto;
+        background-color: transparent;
+        grid-template-columns: 80% 20%;
+       }
+
+       .d .e{
+        width: auto;
+        max-width: 98%;
+        padding: 15px;
+                height: 100%;
+
+        background-color: #fff;
+       }
+        
+       .e img{
+        width: auto;
+        height: 40px;
+       }
+       .d .f{
+        width: auto;
+        max-width: 18;
+        padding: 15px;
+
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+                height: 100%;
+       }
+
+
+       .e img{
+        max-height: none;
+       }
+       .g{
+        margin: 20px 6%;
+        padding: 10px 10px 10px 10px;
+        background-color: #fff;
+  
+        height: auto;
+        width: auto;
+       }
+       .k {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+       #view{
+        
+        margin-left: 60%;
+        margin-right: 0%;
+        background-color: #2874f0;
+        border: 1px solid white;
+        color: #f1f3f6;
+       }
+      #view1 {
+    background-color: #2874f0;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 2px;
+
+    cursor: pointer;
+    white-space: nowrap; 
+}
+
+      .deals-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding-bottom: 10px;
+    
+    overflow-x: auto; 
+    overflow-y: hidden; 
+
+    
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+   
+    scrollbar-width: none;
+
+    
+    -ms-overflow-style: none;
+    
+    
+    -webkit-overflow-scrolling: touch;
+}
+.deals {
+    flex: 0 0 auto; 
+    width: 150px;    
+    text-align: center;
+}
+
+.deals img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+#right{
+    display: inline-block;
+    height: 120px;
+    margin-top: 5%;
+    float: right;
+   
+}
